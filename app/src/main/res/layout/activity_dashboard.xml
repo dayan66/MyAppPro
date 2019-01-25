@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/mobile_background"
+    android:gravity="center"
+    >
+    <ImageButton
+        android:onClick="close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_close_black_24dp"
+        android:background="@color/black_overlay"
+        />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Dashboard"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAlignment="center"
+        android:textColor="@color/green" />
+    <!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Email"
+            android:id="@+id/tvEmailProfile"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true" />-->
+    <LinearLayout
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/bankcardId"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#fcfcfc">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/circlebackgroundpurple"
+                    android:src="@drawable/ic_control_point_black_24dp"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="Info"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Insert your after registration Information"
+                    android:padding="5dp"
+                    android:textColor="@android:color/darker_gray"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:id="@+id/assignment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#fcfcfc">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/circlebackgroundpink"
+                    android:src="@drawable/ic_assignment_black_24dp"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="Assignments"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Check your assignments here!"
+                    android:padding="5dp"
+                    android:textColor="@android:color/darker_gray"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:id="@+id/attendnece"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#fcfcfc">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/circlebackgroundgreen"
+                    android:src="@drawable/ic_content_paste_black_24dp"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="Attendnece"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Check your bank activities"
+                    android:padding="5dp"
+                    android:textColor="@android:color/darker_gray"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:id="@+id/report"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="#fcfcfc">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/circlebackgroundyello"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_credit_card_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Report"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/lightgray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Check out your repot"
+                    android:textColor="@android:color/darker_gray" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="340dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:id="@+id/classPerformance"
+                android:background="#fcfcfc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/circlebackgroundpurple"
+                    android:src="@drawable/ic_show_chart_black_24dp"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="Class Performance"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Check your overall class performance"
+                    android:padding="5dp"
+                    android:textColor="@android:color/darker_gray"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</LinearLayout>
